@@ -1,0 +1,37 @@
+
+
+.table, td{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: rgb(16, 237, 237);
+   
+}
+
+
+.mainTitle{
+    display: flex;
+gap: 24px;
+justify-content: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+
+
+
+.tableList{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    font-size: 18x;
+    margin-bottom: 10px;
+    table-layout: auto;
+ 
+}
+ 

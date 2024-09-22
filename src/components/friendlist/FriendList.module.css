@@ -1,15 +1,13 @@
-.friends{
-    width: 540px;
-}
 
 
 .friendList{
-    max-width: 380px;
+ width: 540px;
     margin: 32px auto;
     list-style: none;
     display: flex;
     gap: 16px;
-flex-direction: row;
+    padding-left: 0;
+justify-content: center;
 
 }
 
