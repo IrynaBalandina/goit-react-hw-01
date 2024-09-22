@@ -1,15 +1,19 @@
 
+import styles from './FriendListItem.module.css';
+
 
 const FriendListItem = (props) => {
     const{isOnline, avatar, name} = props;
   return (
-    <div>
+    <div className = {styles.friendCard}>
           
-        <img src={avatar} alt="Avatar" width="48" />
-  <p>{name}</p>
-  <span>{isOnline? "Yes" : "No"}</span>
+        <img className = {styles.avatar} src={avatar} alt="Avatar" width="48" />
+  <p className={styles.friendsName}>{name}</p>
+  <span
+        className={`${styles.status} ${isOnline ? styles.online : styles.offline}`}
+      ></span>
     </div>
   )
 }
 
-export default FriendListItem
+export default FriendListItem;
