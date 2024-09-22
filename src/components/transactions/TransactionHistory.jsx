@@ -1,9 +1,10 @@
 
 
-const TransactionHistory = (props) => {
-const {items} = props;
+const TransactionHistory = ({items}) => {
+
   return (
-    <div><table>
+    <div>
+      <table>
     <thead>
       <tr>
         <th>Type</th>
@@ -11,21 +12,24 @@ const {items} = props;
         <th>Currency</th>
       </tr>
     </thead>
-  
+   
     <tbody>
-      <tr>
-        <td>Invoice</td>
-        <td>125</td>
-        <td>USD</td>
-      </tr>
-      <tr>
-        <td>Withdrawal</td>
-        <td>85</td>
-        <td>USD</td>
-      </tr>
-    </tbody>
-  </table></div>
-  )
-}
+     {items.map(({ id, type, amount, currency })=>(
+ 
+      
+      <tr key = {id}>
+         <td>{type}</td>
+         <td>{amount}</td>
+         <td>{currency}</td>
+       </tr>
+      
+    
 
-export default TransactionHistory
+    ))}
+    </tbody>     
+  </table>
+  </div>
+  );
+};
+
+export default TransactionHistory;
