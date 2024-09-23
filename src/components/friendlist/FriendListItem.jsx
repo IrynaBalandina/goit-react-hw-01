@@ -9,9 +9,7 @@ const FriendListItem = (props) => {
           
         <img className = {styles.avatar} src={avatar} alt="Avatar" width="48" />
   <p className={styles.friendsName}>{name}</p>
-  <span
-        className={`${styles.status} ${isOnline ? styles.online  : styles.offline }`}
-      ></span>
+  <span className = {isOnline ? styles.statusOnline : styles.statusOffline}> {isOnline ? "Online" : "Offline"}</span>
     </div>
   )
 }
