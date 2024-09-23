@@ -10,7 +10,7 @@ const FriendListItem = (props) => {
         <img className = {styles.avatar} src={avatar} alt="Avatar" width="48" />
   <p className={styles.friendsName}>{name}</p>
   <span
-        className={`${styles.status} ${isOnline ? styles.online : styles.offline}`}
+        className={`${styles.status} ${isOnline ? styles.online  : styles.offline }`}
       ></span>
     </div>
   )
